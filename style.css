@@ -1,0 +1,178 @@
+header{
+    background-image: url('static/images/background.jpg');
+    height: 95vh;
+     width: 100%;
+   
+}
+.header{
+    background-color: #000;
+   opacity: 0.74;
+   width: 100%;
+    height: 95vh;
+    position: absolute;
+}
+.para_contents{
+    margin-bottom:6px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header_content{
+    margin: auto;
+    width: 70%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    height: 100px;
+    align-items: center;
+}
+.header_content >button{
+    padding:9px 12px;
+    
+    border:none;
+    border-radius: 4px;
+    color:white;
+    background-color: rgb(255, 4, 4);
+}
+.header_content >img{
+    width: 150px;
+}
+.main_headerContent{
+    z-index: 5;
+    position:relative;
+    top:27%;
+    text-align: center;
+    color:white;
+}
+.main_headerContent h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    position: relative;
+    z-index: 2;
+    font-family: sans-serif;
+}
+.short_par > p{
+    font-family: sans-serif;
+      margin:0.5rem;
+        font-size: 1.4rem;
+} 
+.last_par {
+    margin-top:1.3rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+.btn_inp{
+    margin-top: 12px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+     flex-wrap: wrap;
+}
+.btn_inp >input{
+    width: 30%;
+    border-radius: 6px;
+    padding:15px;
+    color:white;
+    background: transparent;
+}
+input::placeholder{
+    color:white;
+    background-color: black;
+ font-size: 1rem;
+}
+.btn_inp >button{
+    color:white;
+    width: 13%;
+    font-size: 1.3rem;
+    padding:12px;
+    border-radius: 6px;
+    border:none;
+    margin-left:6px;
+    background-color: rgb(255, 4, 4);
+}
+button >span{
+    margin-left:5px;
+    font-size: 1.4rem;
+}
+
+/* for smaller screen less than 1200 px */
+
+@media only screen and (max-width:1200px){
+     .header_content{
+        justify-content: space-between;
+        width: 90%;
+     }
+     header{
+        height: 75vh;
+     }
+     .header{
+        height: 75vh;
+     }
+     .header_content > img{
+        width:100px;
+     }
+     .main_headerContent{
+        top:15%;
+     }
+     .main_headerContent h2{
+        font-size: 2rem;
+     }
+     .short_par > p{
+        font-size: 1.1rem;
+     }
+     .last_par{
+        font-size: 1.1rem;
+     }
+     .btn_inp{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+     }
+     .btn_inp >input{
+        margin-top: 12px;
+        width:60%;
+     }
+     .btn_inp >button{
+        font-size: 1.2rem;
+          margin-top: 12px;
+          width:30%;
+     }
+}
+@media only screen and (max-width:700px){
+    header{
+        height: 73vh;
+     }
+     .header{
+        height: 73vh;
+     }
+    .btn_inp >input {
+        width: 100%;
+    }
+    .btn_inp >button{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:430px){
+    header{
+        height: 80vh;
+    }
+    .header{
+        height: 80vh;
+    }
+    .btn_inp >button{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+}
