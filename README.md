@@ -1,1 +1,1 @@
-<h2>Netflix Website</h2>
+<h2 style="color🔹">Netflix Website</h2>
