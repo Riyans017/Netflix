@@ -38,6 +38,9 @@ header{
     color:white;
     background-color: rgb(255, 4, 4);
 }
+.header_content >button:hover{
+    cursor:pointer;
+}
 .header_content >img{
     width: 150px;
 }
@@ -104,6 +107,14 @@ input::placeholder{
     border:none;
     margin-left:6px;
     background-color: rgb(255, 4, 4);
+}
+.btn_inp > button:hover{
+    cursor:pointer;
+}
+button > a {
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
 }
 button >span{
     margin-left:5px;
